@@ -20,7 +20,6 @@ export default function ShowDetails({ show }) {
       <h2>{show.name}</h2>
       <div className="episode-container">
         {" "}
-        {/* Added this container */}
         <EpisodeList
           name={show.name}
           episodes={show.episodes}
