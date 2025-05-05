@@ -1,9 +1,55 @@
+.episode-container {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.episodes {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.episode-details {
+  flex-grow: 1;
+}
+
+.episodes ol {
+  list-style: none;
+  padding: 0;
+}
+
+.episodes li {
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.episodes li.selected {
+  font-weight: bold;
+}
+
+.episode-details h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.episode-details h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.episode-details button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
 .shows {
   display: flex;
 }
 
 .show {
   padding: 0 1ch;
+  color: white;
+  text-decoration: none;
 }
 
 .show:not(:last-child) {
@@ -13,11 +59,10 @@
 .show:hover,
 .show.selected {
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .show-details {
-  display: grid;
   gap: 1rem;
 }
 
